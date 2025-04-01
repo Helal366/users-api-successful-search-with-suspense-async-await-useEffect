@@ -1,0 +1,33 @@
+.users-section{
+    display: grid;
+    gap: 3rem;
+    margin-left:2rem ;
+  }
+  @media screen and (min-width: 768px) {
+    .users-section{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .users-section{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .address-span{
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  li{
+    margin-top: 12px;
+  }
+  .card{
+    background-color: rgb(10, 86, 89);
+    color: white;
+    padding: 20px 32px 20px;
+    border-radius: 16px;
+    transition: all 0.3s;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 20px orange;
+  }
