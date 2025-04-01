@@ -1,10 +1,10 @@
 import React, { use } from "react";
 import "./Users-module.css";
 
-const Users = ({ fetchUsers, searchText }) => {
-  const users = use(fetchUsers);
-  console.log(users)
-  const filteredUsers = users.filter((user) =>
+const Users = ({ usersPromise, searchText }) => {
+  const usersAll = use(usersPromise);
+  console.log(usersAll)
+  const filteredUsers = usersAll.filter((user) =>
     user.name.toLowerCase().includes(searchText.toLowerCase())
   );
   return (
