@@ -29,5 +29,5 @@
   }
   .card:hover{
     transform: scale(1.05);
-    box-shadow: 2px 2px 20px orange;
+    box-shadow: 2px 2px 20px rgb(229, 41, 223);
   }

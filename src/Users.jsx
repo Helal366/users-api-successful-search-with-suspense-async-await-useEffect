@@ -9,6 +9,7 @@ const Users = ({ usersPromise, searchText }) => {
   );
   return (
     <>
+      <h2 style={{paddingLeft: '32px'}}>Total users: {filteredUsers.length}</h2>
       <section className="users-section">
         {filteredUsers.map((user, i) => (
           <User key={i} user={user}></User>
